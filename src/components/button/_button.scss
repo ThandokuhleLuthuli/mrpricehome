@@ -1,0 +1,45 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.button {
+    border: none;
+    padding: 15px 63px 15px 63px;
+    font-family: $Montserrat;
+    font-weight: $bold;
+    border-radius: 4px;
+    font-weight: $bold;
+
+    img {
+        display: none;
+    }
+    &--yes {
+        img {
+            display: unset;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    
+    &--primary {
+        background-color: $mrp-red;
+        color: $mrp-white;   
+    }
+
+    &--secondary {
+        background-color: $mrp-white;
+        border: 2px solid $mrp-red;
+        color: $mrp-dark;
+        padding: 15px 63px 15px 63px;
+        
+        &:hover {
+            background-color: $mrp-red;
+            border: 2px solid $mrp-white;
+            color : $mrp-white;
+        }
+        @media (max-width: 500px) {
+            padding-left: 45px;
+            padding-right: 45px;
+            margin-left: 30px;
+        }
+       
+    }
+}

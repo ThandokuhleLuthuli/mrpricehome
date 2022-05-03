@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.header {
+   width: 100%;
+   background-color: $mrp-white;
+   border: none; 
+   box-shadow: 0px 3px 6px #00000029;
+   
+   &-logo {
+       width: 300px;
+       height: 42px;
+       @media (max-width: 500px) {
+           width: 154px;
+           height: 17px;
+       }
+   }
+   &-wrapper {
+       display: flex;
+       justify-content:space-between;
+       padding-top: 18px;
+       padding-bottom: 18px;
+       @media(max-width: 500px) {
+           align-items: center;
+       }
+   }
+  
+}
